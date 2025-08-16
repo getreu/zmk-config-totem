@@ -67,6 +67,10 @@ clean-all: clean
 clean-nix:
     nix-collect-garbage --delete-old
 
+# clear the SDK
+uninit:
+    rm -rf ./zephyr ./modules
+
 # parse & plot keymap
 draw:
     #!/usr/bin/env bash
